@@ -1,0 +1,17 @@
+.rowprojects {
+    display: flex; /* equal height of the children */
+  }
+  
+  .colprojects {
+    flex: 1; /* additionally, equal width */
+  }
+  /* div.a {
+    white-space: nowrap; 
+    height: 40px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  div.a:hover {
+    overflow: visible;
+  } */

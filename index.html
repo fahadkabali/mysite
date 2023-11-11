@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>my page</title>
+<title>fahadk site</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -17,13 +19,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+	<script>
+	function alertUser(msg) {
+	alert(msg);
+	}
+	</script>
 </head>
-<body class="w3-black">
+<body class="w3-black" onload="alertUser('WELCOME, PAGE STILL UNDER DEVELOPMENT')">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="images\IMG_20220708_032523_097.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -31,10 +37,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
+  </a>
+  <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cogs w3-xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
+  
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -42,6 +58,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+	<a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -50,97 +68,124 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> KABALI FAHAD MALIK.</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> KABALI FAHAD MALIKI.</h1>
     <p>Software Engineer.</p>
     <img src="images\IMG_9772.JPG" alt="boy" class="w3-image" width="250" height="500">
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  <main>
+  <section id ="about">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64">
     <h2 class="w3-text-light-grey">Fahad kabali</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>I am a highly motivated, enthusiastic, result-oriented individual, willing to go an extra mile to reach goals and learn along the way. For example, my last job involved meeting specific targets on a daily basis, which I managed and sometimes transcended while gaining better and effective means of improving the achievement of those goals. I’m confident that if given this opportunity, I will thrive and deliver quality work within stipulated deadlines.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Data Science Engineer</p>
+    <p>I am a highly motivated and enthusiastic software engineer, my commitment to excellence is reflected not only in my professional achievements but 
+	also in my dedication to continuous improvement. In my previous roles, I excelled at meeting and surpassing specific daily targets, showcasing my 
+	ability to manage goals effectively. This experience was not just about achieving targets; it was an opportunity for me to explore innovative and more 
+	efficient means of attaining objectives.
+	</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">MY SKILLS</h3>
+    <p class="w3-wide">Backend Development</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
     </div>
-    <p class="w3-wide">Python Developer</p>
+    <p class="w3-wide">Frontend Development</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <p class="w3-wide">Deep Neural Network Specialist</p>
+    <p class="w3-wide">Mobile App Development</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
+	</div>
+	<p class="w3-wide">Blockchain Development </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div>
+   </div>
+   </section>
+   <br>
+    <section id="skills">
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
+        <span class="w3-xlarge">Node.js</span><br>
+        <p>Express</p>
+		<p>REST API</p>
+		<p>MongoDB</p>
+		<p>PostgreSQL</p>
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
+        <span class="w3-xlarge">React.js</span><br>
+        <p>Tailwind css<p>
+		<p>Bootstrap</p>
+		<p>Typescript</p>
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
+        <span class="w3-xlarge">React-Native</span><br>
+        <p>Android Studio</p>
+		<p>Kotlin</p>
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
+        <span class="w3-xlarge">Web3</span><br>
+        <p>Motoko</p>
       </div>
     </div>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> <a href ="document\fahad maliki kabali.pdf" attributes-list download >Download Resume</a>
+      <i class="fa fa-download"></i> <a href ="document\Resume.pdf" attributes-list download >Download Resume</a>
     </button>
-    
+    </section>
     <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
+	<section id="projects">
+    <h3 class="w3-padding-16 w3-text-light-grey">MY PROJECTS</h3>
+    <div class="w3-row-padding rowprojects " style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom colprojects">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Front-End Web Development</li>
-          <li class="w3-padding-16">Machine Learning Algorithm Development</li>
-          <li class="w3-padding-16">Deep Learning Specialist</li>
-          <li class="w3-padding-16">Tensorflow Expertism</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Movie App</li>
+          <li class="w3-padding-16">React.js</li>
+          <li class="w3-padding-16">Axios</li>
+          <li class="w3-padding-16">Typescript</li>
+          <li class="w3-padding-16">Rest API</li>
           <li class="w3-padding-16">
-            <h2>All available</h2>
-            <span class="w3-opacity">At a cost</span>
+            <h2>Desciption</h2>
+			<div class="a" style="height:100px">
+            <p><span class="w3-opacity">A completely responsive movie website integrated with the TMDB API was developed.
+			Users can add movies to their favorites by clicking a heart icon, and this information is stored as a collection
+			within Firebase for individual users.Instead of relying on a specific database, we utilized various Firebase 
+			features to gain a deeper understanding of its functionalities.</span></p></div>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="mailto:kabalifahad@gmail.com">Hit Me Up</a></button>
+            <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="https://fahadkabalimovies.web.app/">Check it Out</a></button>
           </li>
         </ul>
       </div>
 
-      <div class="w3-half">
+      <div class="w3-half colprojects">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Deep neural algorithms Development</li>
-          <li class="w3-padding-16">Algorithm Optimisation skills</li>
-          <li class="w3-padding-16">Algorithm Deployment </li>
-          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Keeper App</li>
+          <li class="w3-padding-16">React.js</li>
+          <li class="w3-padding-16">Firebase</li>
+          <li class="w3-padding-16">Html 5</li>
+          <li class="w3-padding-16">Bootstrap css</li>
           <li class="w3-padding-16">
-            <h2>All Possible</h2>
-            <span class="w3-opacity">At a Cost</span>
+            <h2>Description</h2>
+			<div style="height:100px">
+            <p><span class="w3-opacity">The app uses React components to manage the list's state and rendering. 
+			Users can input tasks via an input field, which updates the list dynamically.</span></p>
+			</div>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="mailto:kabalifahad@gmail.com">Hit Me Up</a></button>
+            <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="https://keeper-app-7b55e.web.app/">Check it Out</a></button>
           </li>
         </ul>
       </div>
     <!-- End Grid/Pricing tables -->
     </div>
+	</section>
     
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <h3 class="w3-padding-24 w3-text-light-grey">MY REPUTATION</h3>  
     <img src="images\abraham.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Abraham Salom.</span> CEO Agriworks Innivations Uganda Limited.</p>
+    <p><span class="w3-large w3-margin-right">Abraham Salom.</span> CEO Agriworks Innovations Uganda Limited.</p>
     <p>Fahad is A hardworking Person.</p><br>
     
     <img src="images\mildred.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
@@ -151,12 +196,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
+  <section id="contact">
+  <div class="w3-padding-64 w3-content w3-text-grey" >
+    <h2 class="w3-text-light-grey">CONTACT ME</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Park village, Mpigi town</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kampala, Uganda</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +256787167909</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kabalifahad@gmail.com</p>
     </div><br>
@@ -169,27 +215,29 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <a href="mailto:kabalifahad@gmail.com"><i class="fa fa-paper-plane"></i></a> SEND MESSAGE
         </button>
       </p>
     </form>
   <!-- End Contact Section -->
   </div>
+  <section>
+  
   
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-google w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="" target="_blank" class="w3-hover-text-green">@fahdk software solutions</a></p>
+   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://github.com/fahadkabali" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+	<a href ="https://www.linkedin.com/in/fahad-kabali-4383a514a/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="" target="_blank"><i class="fa fa-google w3-hover-opacity"></i></a>
+    <a href="" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+	<a href="" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="" target="_blank" class="w3-hover-text-green">© fahadk software solutions</a></p>
   <!-- End footer -->
   </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
-
+</main>
 </body>
 </html>
