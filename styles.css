@@ -15,3 +15,29 @@
   div.a:hover {
     overflow: visible;
   } */
+@media screen and (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600 pixels or less */
+  .w3-sidebar {
+    display: none; /* Hide the sidebar on small screens, adjust as needed */
+  }
+}
+
+.a {
+  height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600 pixels or less */
+  .a {
+    height: auto; /* Adjust the height or any other styles for smaller screens */
+  }
+  div.a {
+    height: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  div.a:hover {
+    overflow: visible;
+  }
+}
