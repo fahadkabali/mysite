@@ -66,7 +66,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> KABALI FAHAD MALIKI.</h1>
     <p>Software Engineer.</p>
-    <img src="images\IMG_9772.JPG" alt="boy" class="w3-image fahd">
+    <img src="images\IMG_9772.JPG" alt="image" class="w3-image" width="992" height="1108">
   </header>
 
   <!-- About Section -->
@@ -80,7 +80,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	ability to manage goals effectively. This experience was not just about achieving targets; it was an opportunity for me to explore innovative and more 
 	efficient means of attaining objectives.
 	</p>
-    <h3 class="w3-padding-16 w3-text-light-grey">MY SKILLS</h3>
+    <h3 class="w3-padding-16 w3-text-light-grey" id="skills">MY SKILLS</h3>
     <p class="w3-wide">Backend Development</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:90%"></div>
@@ -101,7 +101,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       
    </section>
    <br>
-    <section id="skills">
+    <section class="w3-content w3-justify w3-text-grey w3-padding-64">
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">Node.js</span><br>
@@ -140,13 +140,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	</div>
            
     </section>
-    <!-- Grid for pricing tables -->
-	<section id="projects">
+    <section id="projects">
+    <div class="w3-padding-64 w3-content w3-text-grey">
     <h3 class="w3-padding-16 w3-text-light-grey">MY PROJECTS</h3>
-    <div class="w3-row-padding rowprojects">
-      <div class="w3-col w3-margin-bottom colprojects">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32" style="height:100px">Movie App</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Movie App</li>
           <li class="w3-padding-16">React.js</li>
           <li class="w3-padding-16">Axios</li>
           <li class="w3-padding-16">Typescript</li>
@@ -165,9 +165,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </ul>
       </div>
 
-      <div class="w3-col colprojects">
+      <div class="w3-half">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32" style="height:100px">Keeper App</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Keeper App</li>
           <li class="w3-padding-16">React.js</li>
           <li class="w3-padding-16">Motoko</li>
           <li class="w3-padding-16">DFX</li>
@@ -184,34 +184,62 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           </li>
         </ul>
       </div>
-	  
-	  <div class="w3-col colprojects">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32 nft">NFT Martetplace</li>
-          <li class="w3-padding-16">React.js</li>
-          <li class="w3-padding-16">Firebase</li>
-          <li class="w3-padding-16">Html 5</li>
-          <li class="w3-padding-16">Bootstrap css</li>
-          <li class="w3-padding-16">
-            <h2>Description</h2>
-			<div class="w3-panel w3-light-grey w3-border w3-round a">
-            <p><span class="w3-opacity">An NFT marketplace,is a digital platform where users can buy, sell, and trade NFTs. 
-			NFTs are unique digital assets that are typically based on blockchain technology, 
-			often using blockchain platforms like Ethereum. Each NFT has a distinct identifier, 
-			making it different from other tokens, and they are used to represent ownership of specific digital or physical items</span></p>
-			</div>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="https://github.com/fahadkabali/DApp.git"target= "_blank">Check it Out</a></button>
-          </li>
-        </ul>
-      </div>
+      
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">NFT Martetplace</li>
+              <li class="w3-padding-16">React.js</li>
+              <li class="w3-padding-16">Firebase</li>
+              <li class="w3-padding-16">Html 5</li>
+              <li class="w3-padding-16">Bootstrap css</li>
+              <li class="w3-padding-16">
+                <h2>Description</h2>
+          <div class="w3-panel w3-light-grey w3-border w3-round a">
+                <p><span class="w3-opacity">An NFT marketplace,is a digital platform where users can buy, sell, and trade NFTs. 
+          NFTs are unique digital assets that are typically based on blockchain technology, 
+          often using blockchain platforms like Ethereum. Each NFT has a distinct identifier, 
+          making it different from other tokens, and they are used to represent ownership of specific digital or physical items</span></p>
+          </div>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="https://github.com/fahadkabali/DApp.git"target= "_blank">Check it Out</a></button>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="w3-half">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">NFT Martetplace</li>
+              <li class="w3-padding-16">React.js</li>
+              <li class="w3-padding-16">Firebase</li>
+              <li class="w3-padding-16">Html 5</li>
+              <li class="w3-padding-16">Bootstrap css</li>
+              <li class="w3-padding-16">
+                <h2>Description</h2>
+          <div class="w3-panel w3-light-grey w3-border w3-round a">
+                <p><span class="w3-opacity">An NFT marketplace,is a digital platform where users can buy, sell, and trade NFTs. 
+          NFTs are unique digital assets that are typically based on blockchain technology, 
+          often using blockchain platforms like Ethereum. Each NFT has a distinct identifier, 
+          making it different from other tokens, and they are used to represent ownership of specific digital or physical items</span></p>
+          </div>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="https://github.com/fahadkabali/DApp.git"target= "_blank">Check it Out</a></button>
+              </li>
+            </ul>
+          </div>
+    
     <!-- End Grid/Pricing tables -->
     </div>
-	</section>
+  </div>
+</section>
     
+    <!-- Grid for pricing tables -->
+  
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">MY REPUTATION</h3>  
+  <div class="w3-padding-64 w3-content w3-text-grey">
+    <h3 class="w3-text-light-grey">MY REPUTATION</h3>  
     <img src="images\abraham.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Abraham Salom.</span> CEO Agriworks Innovations Uganda Limited.</p>
     <p>Fahad is A hardworking Person.</p><br>
@@ -221,6 +249,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>No one is better than Fahad.</p>
   <!-- End About Section -->
   </div>
+
   
   
   <!-- Contact Section -->
